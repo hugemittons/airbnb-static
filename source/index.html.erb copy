@@ -40,21 +40,42 @@
     </div>
     <div class="wrapper-grey padded">
       <div class="container">
-          <div class="row">
-            <% data.flats.each do |owner, flat| %>
-            <div class="col-xs-12 col-sm-4">
-              <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
-                <div class="card-category"><%= flat.city %></div>
-                <div class="card-description">
-                  <h2><%= flat.name %></h2>
-                  <p><%= flat.summary %></p>
-                </div>
-                <%= image_tag flat.owner_picture, class:"card-user avatar avatar-large" %>
-                <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
+        <h2 class="text-center">Your next trip</h2>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
+              <div class="card-category">Paris</div>
+              <div class="card-description">
+                <h2>Seb's home</h2>
+                <p>Charming room with patio</p>
               </div>
+              <img class="card-user avatar avatar-large" src="images/seb.jpg">
+              <a class="card-link" href="#" ></a>
             </div>
-            <% end %>
           </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
+              <div class="card-category">Brussels</div>
+              <div class="card-description">
+                <h2>Anne's home</h2>
+                <p>Lovely house</p>
+              </div>
+              <img class="card-user avatar avatar-large" src="images/anne.jpg">
+              <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
+              <div class="card-category">London</div>
+              <div class="card-description">
+                <h2>Romain's home</h2>
+                <p>Nice flat in Piccadilly</p>
+              </div>
+              <img class="card-user avatar avatar-large" src="images/romain.jpg">
+              <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
